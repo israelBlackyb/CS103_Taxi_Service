@@ -18,5 +18,13 @@
     <ClCompile Include="Israel_Ethan_Taehg_Taxi_Booking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
