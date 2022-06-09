@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4fd6fa9e-17a4-4dec-a440-7053ba54ce59}</ProjectGuid>
+    <ProjectGuid>{56a473cc-9b41-4330-a073-b09be828079f}</ProjectGuid>
     <RootNamespace>IBEBTHloggedinpages</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
