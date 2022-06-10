@@ -24,15 +24,18 @@ struct newDriver{ //new driver detail input, creates a new driver
 //function Prototypes
 bool eligiblityCheck();
 
+bool eligible;
 
-int main()
+int driveReg()
 {
 	DrawLine(15);
 	cout << "Welcome New Driver\n";
 	DrawLine(15);
 	cout<<"Please fill out the following check:\n";
 	eligiblityCheck();
-
+	if (eligible == true) {
+		filloutDriverRego();
+	 }
 }
 
 bool eligiblityCheck() {
