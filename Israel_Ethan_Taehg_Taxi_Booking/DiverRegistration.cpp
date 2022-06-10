@@ -73,6 +73,6 @@ void filloutDriverRego() {
 			test.endorsmentNumber = (rand() % 10) + 1;
 	}
 
-	test.endorsmentExpiry = "9/06/2024";
+	test.endorsmentExpiry = "9/06/2024"; //find way to generate random
 } //will need way of chossing inputs for mutliple drivers
 	
