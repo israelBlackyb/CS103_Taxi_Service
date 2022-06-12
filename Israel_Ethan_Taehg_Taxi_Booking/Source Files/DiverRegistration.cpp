@@ -1,7 +1,7 @@
 // Israel_Ethan_Taehg_Taxi_Booking.cpp : This file contains the 'main' function. Program execution begins and ends there.
-#include "Header.h"
+#include "Functions.h"
 
-struct newDriver{ //new driver detail input, creates a new driver
+newDriver{ //new driver detail input, creates a new driver
 	string fullName;
 	char gender; //male, female, other
 	string DoB; //date of birth
@@ -23,19 +23,20 @@ struct newDriver{ //new driver detail input, creates a new driver
 
 //function Prototypes
 bool eligiblityCheck();
+newDriver filloutDriverRego();
 
 bool eligible;
 
-int driveReg()
+newDriver driverRegistration()
 {
 	DrawLine(15);
 	cout << "Welcome New Driver\n";
 	DrawLine(15);
 	cout<<"Please fill out the following check:\n";
 	eligiblityCheck();
-	if (eligible == true) {
-		filloutDriverRego();
-	 }
+	if (eligible) {
+		return filloutDriverRego();
+	}
 }
 
 bool eligiblityCheck() {
@@ -54,7 +55,7 @@ bool eligiblityCheck() {
 	return eligible;
 }
 
-void filloutDriverRego() {
+newDriver filloutDriverRego() {
 	int randomNumber;
 	newDriver test; //to test the ability to fill out form, replace with proper mechanics
 	cout << "\nEnter your First and last name (e.g John Smith): "; cin >> test.fullName ;
@@ -71,11 +72,12 @@ void filloutDriverRego() {
 	cout << "\nEnter your Vehicle Registration Number "; cin >> test.vehicleRegoNum;
 	cout << "\nEnter your WoF Expiry Date "; cin >> test.wofExpiryDate;
 
-	srand((unsigned)time(0));
+	srand((Time(NULL));
 	for (int i = 100000; i < 999999; i++) {
 			test.endorsmentNumber = (rand() % 10) + 1;
 	}
 
 	test.endorsmentExpiry = "9/06/2024"; //find way to generate random
+	return test;
 } //will need way of chossing inputs for mutliple drivers
 	

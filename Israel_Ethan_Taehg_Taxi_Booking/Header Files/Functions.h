@@ -14,4 +14,9 @@ using std::cin;
 using std::endl;
 using std::string;
 
+struct newDriver;
+
 void DrawLine(int stars);
+void landing();
+
+void driverRegistration()
