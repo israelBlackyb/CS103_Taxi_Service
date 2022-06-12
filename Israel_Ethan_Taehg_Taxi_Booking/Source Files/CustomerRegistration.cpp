@@ -3,7 +3,6 @@
 
 struct paymentMethod
 {
-
 	int cardNumber;
 	int expMonth;
 	int expYear;
@@ -20,7 +19,7 @@ struct newCustomer { //new driver detail input, creates a new driver
 //function Prototypes
 
 
-int main()
+int custReg()
 {
 	DrawLine(15);
 	cout << "Welcome Customer\n";
@@ -34,6 +33,4 @@ void customerRegistration() {
 	cout << "Enter your Email: "; cin >> test.email;
 	cout << "Enter your Street Address: "; cin >> test.streetAddress;
 	test.eftposCard.card
-
-
 }
