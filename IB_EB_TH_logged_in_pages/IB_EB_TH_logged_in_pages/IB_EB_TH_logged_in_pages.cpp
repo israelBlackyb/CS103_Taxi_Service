@@ -4,71 +4,12 @@
 #include <time.h> 
 #include<windows.h>
 #include <stdio.h>
-using namespace std;
-
-//test
-
-//the Menu template I made.
-/*void mainMenuTemplate()
-{
-	bool run = true;
-	int menuOption;
-	//DrawLine()
-	cout << "1 for Admin login|2 for Operator login|3 for User login|4 to quit\n";
-	//DrawLine()
-
-
-	while (run == true)
-	{
-		int menuOption = 0;
-		try
-		{
-			cin >> menuOption;
-			if (menuOption < 1 || menuOption > 4)
-			{
-				throw(menuOption);
-			}
-			else {
-				break;
-			}
-		}
-		catch (int menuOption)
-		{
-			cout << "\nInvaild input!\nYou must a valid number corosponding to the avalable options\n";
-		}
-	}
-
-	switch (menuOption)
-	{
-	case 1:
-		//Admin login fuction
-		cout << "\nlogin fuction 0\n";
-		break;
-	case 2:
-		//Operator login fuction
-		cout << "\nlogin fuction 1\n";
-		break;
-	case 3:
-		//User login fuction
-		cout << "\nlogin fuction 2\n";
-		break;
-	case 4:
-		run = false;
-		break;
+#include "logged_in_fuctions.h"
 
 
 
+//Functions
 
-
-		//For observation perpouses, remove  once code is ready
-		while (true)
-		{
-			cout << "\nwait\n";
-			int wait;
-			cin >> wait;
-		}
-	}
-}*/
 
 //accounts
 void admin()
@@ -90,23 +31,24 @@ void admin()
 			switch (menuOption)
 			{
 			case 1:
-				//Function for reading and editing customer_account !must be replaced!
+				//Function for reading and editing customer_account !must be replaced! (t.b.w.n)
+				
 				break;
 			case 2:
-				//Function for reading and editing driver_account !must be replaced!
+				//Function for reading and editing driver_account !must be replaced! (t.b.w.n)
 				break;
 			case 3:
-				//Read Write complaint_problems !must be replaced!
+				readTXT("complaint_problems");
 				break;
 			case 4:
-				//Read user_feedback !must be replaced!
+				readTXT("user_feedback");
 				break;
 			case 5:
-				//Read weeky_report !must be replaced!
+				//Read weeky_report !must be replaced! (t.b.w.n)
 				break;
 			case 6:
-				//Get current date !must be replaced!
-				//Read weeky_report day[current date] !must be replaced!
+				//Get current date !must be replaced! (t.b.w.n)
+				//Read weeky_report day[current date] !must be replaced! (t.b.w.n)
 				break;
 			case 7:
 				runAccount2 = true;
@@ -119,10 +61,10 @@ void admin()
 						switch (menuOption)
 						{
 						case 1:
-							//Read cancellation_report !must be replaced!
+							readCSV("cancellation_report");
 							break;
 						case 2:
-							//Read registration_report !must be replaced!
+							readCSV("registration_report");
 							break;
 						case 3:
 							runAccount2 = false;
@@ -179,26 +121,26 @@ void driver(string driverID)
 			switch (menuOption)
 			{
 			case 1:
-				//Read trip_booking tripNumber !must be replaced!
+				//Read trip_booking tripNumber !must be replaced! (t.b.w.n)
 				break;
 			case 2:
-				//Read trip_booking tripUserName !must be replaced!
+				//Read trip_booking tripUserName !must be replaced! (t.b.w.n)
 				break;
 			case 3:
-				//Read trip_booking tripContactNumb !must be replaced!
+				//Read trip_booking tripContactNumb !must be replaced! (t.b.w.n)
 				break;
 			case 4:
-				//Read trip_booking tripStart !must be replaced!
+				//Read trip_booking tripStart !must be replaced! (t.b.w.n)
 				break;
 			case 5:
-				//Read trip_booking tripEnd !must be replaced!
+				//Read trip_booking tripEnd !must be replaced! (t.b.w.n)
 				break;
 			case 6:
-				//Read trip_booking tripTime[0] tripTime[1] tripTime[2] tripTime[4] !must be replaced!
+				//Read trip_booking tripTime[0] tripTime[1] tripTime[2] tripTime[4] !must be replaced! (t.b.w.n)
 				//		          (month)      (day)         (hour)     (minute)
 				break;
 			case 7:
-				//Toggle availableState !must be replaced!
+				//Toggle availableState !must be replaced! needs strut for boolen
 				break;
 			case 8:
 				runAccount = false;
@@ -219,6 +161,7 @@ void user(string userName)
 	// initializing Varables 
 	bool runAccount = true;
 	int menuOption = 1;
+	char input;
 	string name;
 
 	if (userName == "guest")
@@ -240,33 +183,43 @@ void user(string userName)
 			switch (menuOption)
 			{
 			case 1:
-				//Write Trip_booking
-				//Read Trip_booking
-				//Ask user to confirm
+				//activate trip booking
 				break;
 			case 2:
-				//Read terms_of_service
+				//change to cout
+				readTXT("TOS");
 				break;
 			case 3:
-				//Read user_rights
+				//change to cout
+				readTXT("user_rights");
 				break;
 			case 4:
-				//Write user_feedback
+				directWriteTXT("user_feedback");
 				break;
 			case 5:
-				//Write complaint_problems 
+				directWriteTXT("complaint_problems");
 				break;
 			case 6:
+				//cout
 				//Read pricing_calculation 
 				break;
 			case 7:
+				//cout
 				//Read available_areas
 				break;
 			case 8:
-				//Write or read lost_&_found
+				readTXT("lost_&_found");
+				cout << "\nWould you like enter an item to look for?(y/n)";
+				cin >> input;
+				if (tolower(input) == 'y') {
+					cout << "\nPlease include all the detail you can about your lost item and make sure to inlcude your contact details so we may infrom you if we find your lost item\n";
+					Sleep(3000);
+					directWriteTXT("lost_&_found");
+				}
+				
 				break;
 			case 9:
-				//Write customer_account
+				//Write user resgstration
 				break;
 			case 10:
 				runAccount = false;
@@ -283,7 +236,7 @@ void user(string userName)
 	}
 }
 
-int main()
+void login()
 {
 	// initializing Varables 
 	bool runLogged = true;

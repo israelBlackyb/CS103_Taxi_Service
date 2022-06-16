@@ -122,6 +122,8 @@ int main()
         //explains to user how date is formated
         cout << "\n\nAll dates are stored in number date format\nMonth, Days, Hours, and Minutes (eg Mon/d/h/m)";
         Sleep(3000);
+        cout << "\nWe only go from Yoobee to:\n";
+        Sleep(1000);
         cout << "\n\nPlease choose a date for your trip\n";
         Sleep(1000);
         //gets user input and confirms is valid

@@ -18,5 +18,8 @@
     <ClCompile Include="IB_EB_TH_trip_booking_page.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="My Baby.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
