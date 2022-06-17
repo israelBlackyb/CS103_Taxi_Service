@@ -5,6 +5,8 @@
 #include <vector>
 #include <stdio.h>
 #include <sstream>
+#include<windows.h>
+#include <time.h> 
 
 using std::cin;
 using std::cout;
@@ -22,10 +24,12 @@ string CSVOpenClose();
 
 string TXTOpenClose();
 
+//read and writing file fuctions
 void directWriteTXT(string fileName);
 void readTXT(string fileName);
-void readWriteTXT(string fileName);
-
 void directWriteCSV(string fileName);
 void readCSV(string fileName);
-void editCSV(string fileName, string id);
+//Accounts
+void admin();
+void driver(string driverID);
+void user(string userName);
