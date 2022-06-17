@@ -51,24 +51,52 @@ void login(char accountType)
 			int driverCount = 10;
 			// string That Reads A File Or Struct That Holds All Driver Information And Gets The IDList !must be replaced!
 			string driverIDlist[10] = { "dr1", "dr2", "dr3", "dr4", "dr5" , "dr6" , "dr7" , "dr8" , "dr9" , "dr10"};
+			//place holder for aformentioned File Or Struct but storing passwords!must be replaced!
+			string driverpasswordList[10] = { "p1", "p2", "p3", "p4", "p5" , "p6" , "p7" , "p8" , "p9" , "p10" };
 			int dCounter = 0;
-			cout << "\nPlease enter your Driver ID: ";
-			cin >> driverID;
-			while (dCounter <= driverCount && search == true)
+			try
 			{
-				if (driverID == driverIDlist[dCounter])
+				cout << "\nPlease enter your Driver ID: ";
+				cin >> driverID;
+				while (dCounter <= driverCount && search == true)
 				{
-					search = false;
+					if (driverID == driverIDlist[dCounter])
+					{
+						search = false;
+						throw(driverID);
+					}
+					dCounter++;
 				}
-				dCounter++;
+				if (dCounter > driverCount)
+				{
+					cout << "\nNo such ID exists.\n";
+				}
+				else
+				{
+					//string userpassword [uCounter];
+					string password = driverpasswordList[dCounter];
+					cout << "\nPlease Enter your password " << userName << ": ";
+					cin >> pasInput;
+					for (int i = 0; i < 3; i++)
+					{
+						if (pasInput == password)
+						{
+							driver(driverID);
+							i = 3;
+						}
+						else
+						{
+							cout << "\nIncorrect password.\n" << 3 - i << " Tries left \nPlease Enter correct password: ";
+							cin >> pasInput;
+						}
+					}
+				}
 			}
-			if (dCounter > driverCount)
+			catch (string userName)
 			{
 				cout << "\nNo such ID exists.\n";
-			}
-			else 
-			{
-				driver(driverID);
+				runLogged = false;
+				break;
 			}
 			runLogged = false;
 			break;
@@ -93,26 +121,30 @@ void login(char accountType)
 					}
 					uCounter++;
 				}
-				//string userpassword [uCounter];
-				string password = userpasswordList[uCounter];
-				cout << "\nPlease Enter your password " << userName << ": ";
-				cin >> pasInput;
-				for (int i = 0; i < 3; i++)
-				{
-					if (pasInput == password)
-					{
-						user(userName);
-						i = 3;
-					}
-					else
-					{
-						cout << "\nIncorrect password.\n" << 3 - i << " Tries left \nPlease Enter correct password: ";
-						cin >> pasInput;
-					}
-				}
 				if (uCounter > userCount)
 				{
 					throw(userName);
+				}
+				else
+				{
+
+					//string userpassword [uCounter];
+					string password = userpasswordList[uCounter];
+					cout << "\nPlease Enter your password " << userName << ": ";
+					cin >> pasInput;
+					for (int i = 0; i < 3; i++)
+					{
+						if (pasInput == password)
+						{
+							user(userName);
+							i = 3;
+						}
+						else
+						{
+							cout << "\nIncorrect password.\n" << 3 - i << " Tries left \nPlease Enter correct password: ";
+							cin >> pasInput;
+						}
+					}
 				}
 				
 			}
