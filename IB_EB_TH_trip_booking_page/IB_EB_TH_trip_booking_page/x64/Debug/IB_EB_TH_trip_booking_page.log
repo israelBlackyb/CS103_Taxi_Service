@@ -1,5 +1,5 @@
 ﻿  IB_EB_TH_trip_booking_page.cpp
-C:\Users\ethan\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page.cpp(294,29): warning C4101: 'confirm': unreferenced local variable
-C:\Users\ethan\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page.cpp(350,41): warning C4101: 'confirm': unreferenced local variable
-C:\Users\ethan\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page.cpp(357,29): warning C4101: 'confirm': unreferenced local variable
-  IB_EB_TH_trip_booking_page.vcxproj -> C:\Users\ethan\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\x64\Debug\IB_EB_TH_trip_booking_page.exe
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page.cpp(253,29): warning C4101: 'choice': unreferenced local variable
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page.cpp(343,41): warning C4101: 'confirm': unreferenced local variable
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page\IB_EB_TH_trip_booking_page.cpp(350,29): warning C4101: 'confirm': unreferenced local variable
+  IB_EB_TH_trip_booking_page.vcxproj -> C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_trip_booking_page\x64\Debug\IB_EB_TH_trip_booking_page.exe
