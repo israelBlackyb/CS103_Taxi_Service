@@ -95,10 +95,8 @@ void bookTaxi(int month, int day, int hour, int minute, string name, string dest
     fileBooking.close();
 }
 
-void login()
+void Booking(string username)
 {
-    //username (should be getting this from the logged_in_page)!must be replaced!
-    string username = "tester";
     //initializing variables
     bool run = true;
     //time details

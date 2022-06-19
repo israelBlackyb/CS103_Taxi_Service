@@ -21,7 +21,7 @@ void user(string userName)
 	cout << "\nWelcome " << name << ".\n";
 	while (runAccount == true) {
 		//Read complaint_problems userProbCount
-		cout << "\nInput 1 to Book a Taxi|Input 2 to Review TOS|Input 3 to View Your rights|Input 4 to Make a Review|Input 5 to Report a Problem|Input 6 to Re-read Pricing Calculation|Input 7 to Re-read Available Areas|Input 8 to Access Lost & Found|Input 9 to create a new account|Input 10 to go Back to menu\n:";
+		cout << "\nInput 1 to Book a Taxi|Input 2 to Review TOS|Input 3 to View Your rights|Input 4 to Make a Review|Input 5 to Report a Problem|Input 6 to Re-read Pricing Calculation|Input 7 to Re-read Available Areas|Input 8 to Access Lost & Found|Input 9 to go Back to menu\n:";
 		cin >> menuOption;
 		try
 		{
@@ -29,13 +29,12 @@ void user(string userName)
 			{
 			case 1:
 				//activate trip booking
+				void Booking(username);
 				break;
 			case 2:
-				//change to cout
 				readTXT("TOS");
 				break;
 			case 3:
-				//change to cout
 				readTXT("user_rights");
 				break;
 			case 4:
@@ -62,9 +61,6 @@ void user(string userName)
 
 				break;
 			case 9:
-				//Write user resgstration
-				break;
-			case 10:
 				runAccount = false;
 				break;
 			default:

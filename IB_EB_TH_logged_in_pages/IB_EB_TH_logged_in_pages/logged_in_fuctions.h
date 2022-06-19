@@ -1,13 +1,15 @@
 #pragma once
+#include<windows.h>
+#include <stdio.h>
+#include <iomanip>
 #include<fstream>
 #include<iostream>
 #include <string>
 #include <vector>
-#include <stdio.h>
 #include <sstream>
-#include<windows.h>
 #include <time.h> 
 
+//stds
 using std::cin;
 using std::cout;
 using std::string;
@@ -19,6 +21,7 @@ using std::ifstream;
 using std::ofstream;
 using std::vector;
 using std::stringstream;
+using std::setprecision;
 
 string CSVOpenClose();
 
@@ -33,3 +36,5 @@ void readCSV(string fileName);
 void admin();
 void driver(string driverID);
 void user(string userName);
+//Pages
+void Booking(string username);

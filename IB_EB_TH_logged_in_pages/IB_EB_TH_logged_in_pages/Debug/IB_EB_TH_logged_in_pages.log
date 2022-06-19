@@ -1,3 +1,17 @@
-﻿  IB_EB_TH_logged_in_pages.cpp
-C:\Users\ethan\Documents\Uni things\Yoobee things\Yoobee Work\103 Work\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages.cpp(108,15): warning C4101: 'accountType': unreferenced local variable
-  IB_EB_TH_logged_in_pages.vcxproj -> C:\Users\ethan\Documents\Uni things\Yoobee things\Yoobee Work\103 Work\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\Debug\IB_EB_TH_logged_in_pages.exe
+﻿  AdminAccount.cpp
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\AdminAccount.cpp(66,17): warning C4101: 'menuOption': unreferenced local variable
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\AdminAccount.cpp(84,14): warning C4101: 'menuOption': unreferenced local variable
+  DriverAccount.cpp
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\DriverAccount.cpp(8,7): warning C4101: 'availableState': unreferenced local variable
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\DriverAccount.cpp(56,14): warning C4101: 'menuOption': unreferenced local variable
+  IB_EB_TH_logged_in_pages.cpp
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages.cpp(24,15): warning C4101: 'accountType': unreferenced local variable
+  ReadCSV.cpp
+  ReadTXT.cpp
+  DirectWriteTXT.cpp
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\DirectWriteTXT.cpp(6): fatal error C1075: '{': no matching token found
+  GetDate.cpp
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\GetDate.cpp(14,53): error C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  UserAccount.cpp
+C:\Users\270188522\OneDrive - UP Education\Desktop\CS103_Taxi_Service\IB_EB_TH_logged_in_pages\IB_EB_TH_logged_in_pages\UserAccount.cpp(72,14): warning C4101: 'menuOption': unreferenced local variable
+  Generating Code...
